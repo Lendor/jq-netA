@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('../lib/fontawesome-free-5.0.6/fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.css');
+body {
+    padding-top: 20px;
+    padding-bottom: 100px;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    min-height: 100%;
+}
+
+.container {
+  position: relative;
+}
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer.footer {
+  padding: 15px 15px 15px 30px;
+  margin: 20px 0;
+  border: 1px solid #e5e5e5;
+  bottom: 0;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #f7f7f7 0%, #eee 100%);
+  border-radius: 3px;
+} 
+
+.footer p {
+  margin: 0;
+}
+  
+  /* Main marketing message and sign up button */
+  .jumbotron {
+    text-align: center;
+    background-color: transparent;
+  }
+  .jumbotron .btn {
+    padding: 14px 24px;
+    font-size: 21px;
+  }
+  
+  .navbar {
+    background-image: linear-gradient(to bottom, #f7f7f7 0%, #eee 100%);
+    border: 1px solid #e5e5e5;
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-nav {
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: flex;
+    }
+  
+    .navbar-nav .nav-item {
+      -ms-flex: 1 0 auto;
+      -webkit-box-flex: 1;
+      flex: 1 0 auto;
+    }
+  }
+  
+  /* Responsive: Portrait tablets and up */
+  @media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .masthead,
+    .marketing,
+    .footer {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  .lead {
+    font-weight: 100;
+  }
+
+  /*Home page elements. */
+
+  .home-madia-image {
+    width: 25%;
+  }
+
+  /* login page */
+  .row-login-form {
+    margin-top: 50px;
+  }
+
+  .custom-file-label::after {
+    content: "Tallózás";
+  }
+
+  /* Events page */
+  .events-card-deck .card {
+    color: black;
+  }
+
+  .events-card-deck .card:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 4px;
+    text-decoration: none;
+  }
+
+  .events-card-deck .card .btn-link {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+
+  }
+  .input-row {
+    margin: 5px;;
+  }
+  
+  .input-row button {
+    background-color: #efefef;
+  }
+
+  table {
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+
+  h1 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }

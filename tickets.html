@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>JegyBazár</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="masthead">
+          <h3 class="text-muted">Jegybazár</h3>
+    
+          <nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-3">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav text-md-center nav-justified w-100">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="events.html">Események</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="tickets.html">Jegyek</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">Rólunk</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Belépés</a>
+                </li>                
+              </ul>
+            </div>
+          </nav>
+      </header>
+    </div>   
+    <h1>Licitálható jegyek listája</h1>
+    <div class="container">
+    <table class="table table-striped">
+      <thead class ="thead-dark">
+        <tr>
+          <th style="min-width:30%" scope="col">Esemény neve</th>
+          <th scope="col">Időpont</th>
+          <th class="d-none d-md-table-cell" scope="col">Eladó neve</th>
+          <th style="width:16%" scope="col" class="text-right d-none d-md-table-cell">Hány darab?</th>
+          <th style="width:18%" scope="col">Licitek megtekintése</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+    <div class="container footer-container">
+      <!-- Site footer -->
+      <footer class="footer">
+        <p>&copy; Lendor 2018</p>
+      </footer>
+    </div>
+
+    <div class="templates" style="display: none;">
+      <table>
+        <tr class="ticket-row" >
+          <td data-toggle="tooltip" data-html="true" data-placement="bottom" title="<strong>Még 3 napig lehet licitálni</strong><br/>az esemény megtekintéséhez kattints ide">
+            <a href="event.html?id=1">Sziget Fesztivál</a></td>
+          <td>2018.08.03.</td>
+          <td class="d-none d-md-table-cell">Példa Jóska</td>
+          <td class="text-right d-none d-md-table-cell">3 db.</td>
+          <td>
+            <a href="bid.html?id=1">tovább a licithez</a>
+          </td>
+        </tr>
+      </table>
+      
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="lib/jquery-3.2.1.slim.min.js"></script>
+    <script src="lib/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+
+  </body>
+</html>
